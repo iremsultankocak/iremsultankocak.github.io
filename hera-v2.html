@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HERA V2 — Case Study | İrem Sultan Koçak</title>
+<meta name="description" content="HERA V2 product evolution case study: requirements, product decisions and workflows.">
+<meta property="og:title" content="HERA V2 — Case Study | İrem Sultan Koçak">
+<meta property="og:description" content="HERA V2 product evolution case study: requirements, product decisions and workflows.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#f3f1ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23141414'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23c7ff3d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">İ</span>İrem Sultan Koçak</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span>Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="ext" href="https://www.linkedin.com/in/irem-sultan-kocak" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="case-hero has-card container" aria-labelledby="case-title">
+    <div class="grid">
+      <p class="eyebrow reveal"><span>01 / Case study · Product evolution &amp; requirements</span></p>
+      <h1 id="case-title" class="h1 case-title reveal reveal-d1">HERA <span class="v">V2</span></h1>
+      <p class="case-sub reveal reveal-d2">From a working desktop system to a more scalable web product.</p>
+      <p class="lead case-lede reveal reveal-d2">How real operational feedback shaped a new product scope, permission model and research workflows for Tazelenme University.</p>
+      <div class="case-status reveal reveal-d3"><span class="status">Development-stage</span><span class="status status--outline">Analysis &amp; product definition</span></div>
+      <figure class="wf-card case-card reveal reveal-d2" style="--wf-w:380px"><div class="wf" role="img" aria-label="Wireframe based on the real screen: Development-stage HERA V2 management dashboard"><div class="wf-top"><b>Management dashboard</b><span>Wireframe</span></div><div class="wf-body"><div class="wf-split" style="grid-template-columns:18px 1fr"><div style="display:grid;gap:6px;align-content:start"><i class="wf-ico"></i><i class="wf-ico"></i><i class="wf-ico"></i><i class="wf-ico"></i><i class="wf-ico"></i><i class="wf-ico"></i><i class="wf-ico"></i></div><div style="display:grid;gap:8px"><span class="wf-t">Hello, manager</span><span class="wf-ln" style="--w:70%"></span><div class="wf-grid" style="--c:3"><div class="wf-tile"><i></i>Students</div><div class="wf-tile"><i></i>Courses</div><div class="wf-tile"><i></i>Attendance</div><div class="wf-tile"><i></i>Volunteers</div><div class="wf-tile hl"><i></i>Survey library</div><div class="wf-tile hl"><i></i>Research</div><div class="wf-tile"><i></i>Communities</div><div class="wf-tile"><i></i>Trips</div><div class="wf-tile"><i></i>Journal</div></div></div></div></div></div><figcaption class="wf-cap"><p><span class="caption-label">Manager view</span>Broad operational module access</p></figcaption></figure>
+      <dl class="meta-strip case-meta reveal">
+        <div><dt>My contribution</dt><dd>Product Requirements &amp; Workflow Design</dd></div>
+        <div><dt>Team</dt><dd>4 people</dd></div>
+        <div><dt>Scope</dt><dd>14 modules · 4 user roles</dd></div>
+        <div><dt>Stage</dt><dd>Analysis &amp; product definition</dd></div>
+      </dl>
+    </div>
+
+    <div class="mt-l reveal">
+      <div class="evolution" role="img" aria-label="HERA evolved from an eight-module standalone desktop system into a defined fourteen-module web product with four user roles">
+        <div class="evo-from">
+          <small>01 / Proven starting point</small>
+          <strong>HERA V1</strong>
+          <span>Standalone desktop</span>
+          <span class="evo-scope">8 modules</span>
+          <p>Real operations, direct feedback and practical constraints.</p>
+        </div>
+        <div class="evo-mid"><span>Real usage</span><b aria-hidden="true">→</b><span>New needs</span></div>
+        <div class="evo-to">
+          <small>02 / Next product definition</small>
+          <strong>HERA V2</strong>
+          <span>Web-based product scope</span>
+          <span class="evo-scope">14 modules · 4 roles</span>
+          <p>Extended access, research workflows and clearer responsibilities.</p>
+        </div>
+      </div>
+      <p class="note">This diagram represents product scope and planning, not a claim that V2 was deployed.</p>
+    </div>
+  </section>
+
+  <nav class="chapter-nav container" aria-label="Case study sections">
+    <ol>
+      <li><a href="#s1"><span>01</span>Reason to evolve</a></li>
+      <li><a href="#s2"><span>02</span>Approach</a></li>
+      <li><a href="#s3"><span>03</span>Four decisions</a></li>
+      <li><a href="#s4"><span>04</span>Roles &amp; access</a></li>
+      <li><a href="#s5"><span>05</span>Research workflow</a></li>
+      <li><a href="#s6"><span>06</span>Project output</a></li>
+    </ol>
+  </nav>
+
+  <!-- 01 -->
+  <section id="s1" class="section container">
+    <div class="grid section-head">
+      <p class="section-no" aria-hidden="true">01</p>
+      <div class="section-body">
+        <p class="eyebrow">The reason to evolve</p>
+        <h2 class="h2">V2 did not start from a blank page.</h2>
+        <p class="prose prose--lg">HERA V1 had already been installed and used. That experience surfaced new requirements, while interest from other Tazelenme Universities highlighted the limits of a standalone, local desktop setup. The next step was to rethink the product for wider access and more complex institutional workflows.</p>
+      </div>
+    </div>
+    <div class="cols reveal" style="--cols:3">
+      <div class="panel"><span class="panel-label">Input 01</span><h3 class="h3">Operational feedback</h3><p class="muted mt-s">Real users identified friction, missing capabilities and workflow refinements.</p></div>
+      <div class="panel"><span class="panel-label">Input 02</span><h3 class="h3">Broader applicability</h3><p class="muted mt-s">Interest beyond the original institution prompted web-oriented product thinking.</p></div>
+      <div class="panel"><span class="panel-label">Input 03</span><h3 class="h3">Research needs</h3><p class="muted mt-s">Survey reuse and research data required a clearer structure than V1 provided.</p></div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section id="s2" class="section band">
+    <div class="container">
+      <div class="grid section-head">
+        <p class="section-no" aria-hidden="true">02</p>
+        <div class="section-body">
+          <p class="eyebrow">My approach</p>
+          <h2 class="h2">Turn feedback into product decisions, not just a longer feature list.</h2>
+        </div>
+      </div>
+      <ol class="flow flow--numbered reveal" aria-label="Approach">
+        <li>Observe V1 usage</li>
+        <li>Collect &amp; filter needs</li>
+        <li>Define workflows</li>
+        <li>Set rules &amp; access</li>
+        <li class="is-key">Document V2 scope</li>
+      </ol>
+      <div class="grid mt-l"><p class="prose prose--lg reading">I contributed to feature scope, module boundaries, business rules, roles and permissions, and requirements documentation. These decisions were made collaboratively; my focus was on making operational needs explicit enough to guide product development.</p></div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section id="s3" class="section container">
+    <div class="grid section-head">
+      <p class="section-no" aria-hidden="true">03</p>
+      <div class="section-body">
+        <p class="eyebrow">Four product decisions · a selection</p>
+        <h2 class="h2">Where the product became more intentional.</h2>
+        <p class="note">Four examples from the 60+ product decisions defined across the project — chosen to show different kinds of reasoning.</p>
+      </div>
+    </div>
+
+    <article class="decision">
+      <p class="decision-index"><b>01</b>Reusability</p>
+      <div class="decision-main">
+        <h3 class="h3">A survey pool separate from research</h3>
+        <dl class="pd">
+          <dt>Problem</dt><dd>Rebuilding questions for each research project would duplicate work and blur the difference between a survey and the study using it.</dd>
+          <dt class="is-decision">Decision</dt><dd>Define a reusable survey pool, separate from research management, so students can complete assigned surveys without accessing research administration.</dd>
+        </dl>
+      </div>
+      <div class="decision-visual reveal">
+        <div class="dgm" role="img" aria-label="Survey library, reusable survey, multiple studies: one reusable survey is linked to several research projects">
+          <span class="dgm-title">Survey library → reusable survey → multiple studies</span>
+          <div class="pool">
+            <div class="pool-left"><span class="node node--lime">Reusable survey<small>from the survey library</small></span></div>
+            <div class="pool-link" aria-hidden="true"></div>
+            <div class="pool-right"><span class="node">Research project A</span><span class="node">Research project B</span><span class="node node--ghost">Research project …</span></div>
+          </div>
+          <div class="pool-foot"><span><b>Students</b>complete assigned surveys</span><span><b>Research management</b>stays a separate permission</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="decision">
+      <p class="decision-index"><b>02</b>Permissions</p>
+      <div class="decision-main">
+        <h3 class="h3">Student self-service, with boundaries</h3>
+        <dl class="pd">
+          <dt>Problem</dt><dd>Keeping all updates with administrators creates unnecessary work, but unrestricted editing introduces risk.</dd>
+          <dt class="is-decision">Decision</dt><dd>Let students view relevant courses and activities and update selected information, while preserving role-based restrictions.</dd>
+        </dl>
+      </div>
+      <div class="decision-visual reveal">
+        <div class="dgm" role="img" aria-label="Student access covers selected personal and health fields, which is not the same as full admin access">
+          <span class="dgm-title">Student access ≠ full admin access</span>
+          <div class="boundary">
+            <div class="b-in"><b>Student access</b><ul><li>Relevant courses &amp; activities</li><li>Selected personal &amp; health fields</li></ul></div>
+            <div class="b-out"><b>Outside the boundary</b><ul><li>Full admin access</li><li>Research administration</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="decision">
+      <p class="decision-index"><b>03</b>Module boundaries</p>
+      <div class="decision-main">
+        <h3 class="h3">Clubs are not the same as events</h3>
+        <dl class="pd">
+          <dt>Problem</dt><dd>Treating every activity alike would obscure different participation patterns and administrative needs.</dd>
+          <dt class="is-decision">Decision</dt><dd>Separate recurring club workflows from event-specific management.</dd>
+        </dl>
+      </div>
+      <div class="decision-visual reveal">
+        <div class="dgm" role="img" aria-label="Club: ongoing participation and attendance. Event: one-time activities and external guests.">
+          <span class="dgm-title">Two participation patterns</span>
+          <div class="vs">
+            <div><b>Club</b><small>Ongoing participation &amp; attendance</small><span class="vs-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+            <div><b>Event</b><small>One-time activities &amp; external guests</small><span class="vs-pattern is-once" aria-hidden="true"><i></i></span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="decision">
+      <p class="decision-index"><b>04</b>Domain logic</p>
+      <div class="decision-main">
+        <h3 class="h3">Progression beyond a conventional GPA</h3>
+        <dl class="pd">
+          <dt>Problem</dt><dd>A standard academic grading model does not fully describe a social-responsibility learning program for older adults.</dd>
+          <dt class="is-decision">Decision</dt><dd>Define academic progression and transcript logic around the program's actual rules, not just grades.</dd>
+        </dl>
+      </div>
+      <div class="decision-visual reveal">
+        <div class="dgm" role="img" aria-label="Course records plus participation plus program rules define progression and transcript logic, not grades alone">
+          <span class="dgm-title">Program-specific progression</span>
+          <div class="formula"><span class="node">Course records</span><span class="op" aria-hidden="true">+</span><span class="node">Participation</span><span class="op" aria-hidden="true">+</span><span class="node node--lime">Program rules</span></div>
+          <div class="formula-out"><b>Progression &amp; transcript logic</b><span class="crossed">just grades</span></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- 04 -->
+  <section id="s4" class="section band">
+    <div class="container">
+      <div class="grid section-head">
+        <p class="section-no" aria-hidden="true">04</p>
+        <div class="section-body">
+          <p class="eyebrow">Roles &amp; access</p>
+          <h2 class="h2">One platform. Different responsibilities.</h2>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="span-full reveal" style="overflow-x:auto">
+          <table class="role-table">
+            <caption class="sr-only">HERA V2 user roles</caption>
+            <thead><tr><th scope="col">Role</th><th scope="col">Responsibility</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Manager</th><td>Institutional oversight &amp; administration</td></tr>
+              <tr><th scope="row">Teacher</th><td>Teaching-related workflows</td></tr>
+              <tr><th scope="row">Operator</th><td>Day-to-day record management</td></tr>
+              <tr class="is-student"><th scope="row">Student</th><td>Controlled self-service &amp; participation</td></tr>
+            </tbody>
+          </table>
+          <p class="note">Role descriptions summarize the planned access model; they are not an exhaustive permission matrix.</p>
+        </div>
+      </div>
+
+      <div class="mt-xl">
+        <p class="eyebrow mb-m">Management interface · administrative reporting</p>
+        <div class="wf-row-cards">
+          <figure class="wf-card  reveal" style="--wf-w:340px"><div class="wf" role="img" aria-label="Wireframe based on the real screen: HERA V2 management analytics, student and demographics tab"><div class="wf-top"><b>Management analytics</b><span>Wireframe</span></div><div class="wf-body"><div class="wf-row" style="gap:10px;border-bottom:1px solid #e4e1d9;padding-bottom:6px"><span class="wf-m">Overview</span><span class="wf-t" style="box-shadow:0 2px 0 #3c8fa8">Students &amp; demographics</span><span class="wf-m">Operations</span><span class="wf-m">Research</span></div><div class="wf-grid" style="--c:2"><div class="wf-box"><span class="wf-k">Age</span><div class="wf-bars" style="margin-top:6px"><div>65–69<i style="--v:42%"></i></div><div>70–74<i style="--v:79%"></i></div><div>75–79<i style="--v:100%"></i></div><div>80+<i style="--v:68%"></i></div></div></div><div class="wf-box"><span class="wf-k">Gender</span><div class="wf-bars" style="margin-top:6px"><div>Female<i style="--v:53%;--bc:#e8698f"></i></div><div>Male<i style="--v:47%;--bc:#2f7fd1"></i></div></div></div></div></div></div><figcaption class="wf-cap"><p><span class="caption-label">Management analytics</span>Administrative reporting on demographics, course capacity and operational activity</p></figcaption></figure>
+          <figure class="wf-card  reveal" style="--wf-w:320px"><div class="wf" role="img" aria-label="Wireframe based on the real screen: HERA V2 management analytics, operations view"><div class="wf-top"><b>Analytics · operations</b><span>Wireframe</span></div><div class="wf-body"><span class="wf-k">Request flow</span><div class="wf-grid" style="--c:4"><div class="wf-box"><span class="wf-m">Open</span><span class="wf-ln dk" style="--w:40%;margin-top:6px;height:9px"></span></div><div class="wf-box"><span class="wf-m">Opened</span><span class="wf-ln dk" style="--w:40%;margin-top:6px;height:9px"></span></div><div class="wf-box"><span class="wf-m">Resolved</span><span class="wf-ln dk" style="--w:40%;margin-top:6px;height:9px"></span></div><div class="wf-box"><span class="wf-m">Avg. time</span><span class="wf-ln dk" style="--w:40%;margin-top:6px;height:9px"></span></div></div><span class="wf-k">Trip participation &amp; payment</span><div class="wf-grid" style="--c:3"><div class="wf-box"><span class="wf-m">Participants</span><span class="wf-ln dk" style="--w:40%;margin-top:6px;height:9px"></span></div><div class="wf-box"><span class="wf-m">Participation</span><span class="wf-ln dk" style="--w:40%;margin-top:6px;height:9px"></span></div><div class="wf-box"><span class="wf-m">Payment</span><span class="wf-ln dk" style="--w:40%;margin-top:6px;height:9px"></span></div></div></div></div><figcaption class="wf-cap"><p><span class="caption-label">Management analytics</span>Course occupancy, request flow, and trip participation &amp; payment</p></figcaption></figure>
+        </div>
+        <p class="note">Development-stage product screens, not evidence of a public launch. The visible menu reflects the captured implementation state.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section id="s5" class="section container">
+    <div class="grid section-head">
+      <p class="section-no" aria-hidden="true">05</p>
+      <div class="section-body">
+        <p class="eyebrow">Product evidence · Research workflow</p>
+        <h2 class="h2">Reusable surveys. Controlled research access.</h2>
+        <p class="prose prose--lg">These development-stage screens make the distinction tangible: a survey is a reusable question structure, while a research project controls its audience, access and repeated measurement.</p>
+      </div>
+    </div>
+
+    <div class="pair pair--narrow">
+      <div class="p-text reveal">
+        <p class="eyebrow">Reuse without duplication</p>
+        <h3 class="h3">Design the survey once.</h3>
+        <p>Question formats and required fields are defined at the survey level, rather than rebuilt for every study.</p>
+        <p class="caption mt-m"><span class="caption-label">Decision 01</span>A survey pool separate from research</p>
+      </div>
+      <figure class="wf-card p-media reveal" style="--wf-w:300px"><div class="wf" role="img" aria-label="Wireframe based on the real screen: HERA V2 survey editor with question types, a four-point scale and required-question setting"><div class="wf-top"><b>Survey library · builder</b><span>Wireframe</span></div><div class="wf-body"><span class="wf-k">Question type</span><div class="wf-grid" style="--c:4"><span class="wf-btn">Text</span><span class="wf-btn">Choice</span><span class="wf-btn">Checkbox</span><span class="wf-btn on">Scale</span></div><div class="wf-row"><span class="wf-k">Scale</span><span class="wf-pill">3</span><span class="wf-pill ok">4</span><span class="wf-pill">5</span><span class="wf-pill">7</span></div><div class="wf-box">Not at all</div><div class="wf-box">Slightly</div><div class="wf-box">Moderately</div><div class="wf-box">Severely</div><div class="wf-row" style="background:#e8f4f8;border-radius:6px;padding:6px 8px"><span class="wf-toggle"></span><span class="wf-t">Required question</span></div></div></div><figcaption class="wf-cap"><p><span class="caption-label">01 / Survey library</span>Reusable questions, scales and validation rules</p></figcaption></figure>
+    </div>
+
+    <div class="pair pair--flip pair--narrow">
+      <div class="p-text reveal">
+        <p class="eyebrow">Access with boundaries</p>
+        <h3 class="h3">Keep research governance separate.</h3>
+        <p>Research records include ownership and access controls, so managing a study is not the same permission as answering a survey.</p>
+        <p class="caption mt-m"><span class="caption-label">Decision 01</span>Research management stays separate</p>
+      </div>
+      <figure class="wf-card p-media reveal" style="--wf-w:300px"><div class="wf" role="img" aria-label="Wireframe based on the real screen: HERA V2 research metadata with owner, access level and consent documents"><div class="wf-top"><b>Research record</b><span>Wireframe</span></div><div class="wf-body"><div class="wf-grid" style="--c:2"><div><span class="wf-k">Code</span><br><span class="wf-ln dk" style="--w:70%;margin-top:4px"></span></div><div><span class="wf-k">Owner</span><br><span class="wf-t">System admin (Manager)</span></div></div><div><span class="wf-k">Access level</span><br><span class="wf-pill ok" style="margin-top:4px">🔒 Level A · Owner only</span></div><div><span class="wf-k">Status</span><br><span class="wf-pill ok" style="margin-top:4px">✓ Active</span></div><div class="wf-box wf-row sb"><span class="wf-t">Consent documents</span><span class="wf-btn ink">Add document</span></div></div></div><figcaption class="wf-cap"><p><span class="caption-label">02 / Research access</span>Ownership, access level and documentation</p></figcaption></figure>
+    </div>
+
+    <div class="pair pair--narrow">
+      <div class="p-text reveal">
+        <p class="eyebrow">Repeatable measurement</p>
+        <h3 class="h3">Connect one survey to different study waves.</h3>
+        <p>The linked-survey workflow distinguishes survey templates from their use within a particular research project, including pre-test and post-test comparisons.</p>
+        <div class="dgm mt-m" role="img" aria-label="One survey template, used as a pre-test wave and a post-test wave within one research project">
+          <span class="dgm-title">Template vs. use in a study</span>
+          <div class="formula"><span class="node node--lime">Survey template</span><span class="op" aria-hidden="true">→</span><span class="node">Pre-test</span><span class="node">Post-test</span></div>
+        </div>
+      </div>
+      <figure class="wf-card p-media reveal" style="--wf-w:320px"><div class="wf" role="img" aria-label="Wireframe based on the real screen: HERA V2 research interface with linked surveys and pre-test/post-test wave comparison"><div class="wf-top"><b>Research · linked surveys</b><span>Wireframe</span></div><div class="wf-body"><div class="wf-table" style="--cols:.8fr 1.6fr 1.1fr"><div><span>Code</span><span>Survey</span><span>Status</span></div><div><span class="wf-t">GDS-15</span><span class="wf-ln dk"></span><span class="wf-pill ok">Published</span></div><div><span class="wf-t">BECK-A</span><span class="wf-ln dk"></span><span class="wf-pill">Not published</span></div><div><span class="wf-t">YDO</span><span class="wf-ln dk"></span><span class="wf-pill">Not published</span></div></div><div class="wf-row sb"><span class="wf-k">Wave comparison</span><span class="wf-pill ink">Pre-test / Post-test</span></div><div class="wf-grid" style="--c:2"><div class="wf-box sel">Base wave</div><div class="wf-box sel">Compared wave</div></div></div></div><figcaption class="wf-cap"><p><span class="caption-label">03 / Linked surveys</span>Survey assignment and repeat-measurement structure</p></figcaption></figure>
+    </div>
+    <p class="note mt-l">Screens show a development-stage implementation. Any visible labels, statuses and records are illustrative of the interface, not independently verified research outcomes.</p>
+  </section>
+
+  <!-- 06 -->
+  <section id="s6" class="section band">
+    <div class="container">
+      <div class="grid section-head">
+        <p class="section-no" aria-hidden="true">06</p>
+        <div class="section-body">
+          <p class="eyebrow">Project output</p>
+          <h2 class="h2">A defined product direction — not a fabricated launch story.</h2>
+        </div>
+      </div>
+      <div class="cols reveal" style="--cols:3">
+        <div class="panel"><span class="stat">14</span>functional modules in scope</div>
+        <div class="panel"><span class="stat">4</span>defined user roles</div>
+        <div class="panel"><span class="stat">60+</span>product decisions defined<br><span class="muted">4 shown here as examples</span></div>
+      </div>
+      <div class="grid mt-l"><p class="prose prose--lg reading">The work established a structured set of requirements, workflows and business rules for HERA's web evolution. The case study focuses on analysis and product definition; it does not claim a production rollout or measured adoption of V2.</p></div>
+    </div>
+  </section>
+
+  <!-- Learning -->
+  <section class="reflection band--dark on-dark" aria-labelledby="learn-title">
+    <div class="container">
+      <div class="grid">
+        <p class="eyebrow">What I learned</p>
+        <div class="reflection-body reveal">
+          <h2 id="learn-title">Product evolution is not adding more features. <em>It is redefining how the system should work.</em></h2>
+          <p class="prose prose--lg">V1 taught us what real operations required. V2 challenged us to turn that learning into clearer boundaries, permissions and reusable structures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <a class="next-project" href="adsphere.html">
+      <p class="eyebrow">Next case study · 02</p>
+      <span class="np-title">AdSphere <span class="np-arrow" aria-hidden="true">→</span></span>
+      <span class="np-sub">Designing clearer roles, negotiation rules, and approval steps for an end-to-end influencer campaign workflow.</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="container">
+    <p class="footer-cta">Have something interesting to build? <em>Let’s talk.</em></p>
+    <div class="footer-links">
+      <a class="btn" href="https://www.linkedin.com/in/irem-sultan-kocak" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <div class="footer-meta"><small>© 2026 İrem Sultan Koçak</small><a href="index.html#work">← Back to work</a></div>
+  </div>
+</footer>
+</body>
+</html>

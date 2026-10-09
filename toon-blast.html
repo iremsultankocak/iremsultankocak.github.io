@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toon Blast — Product Teardown | İrem Sultan Koçak</title>
+<meta name="description" content="An independent, player-perspective product teardown of the first 50 levels of Toon Blast: onboarding, progression, LiveOps, social retention and monetization.">
+<meta property="og:title" content="Toon Blast — Product Teardown | İrem Sultan Koçak">
+<meta property="og:description" content="An independent, player-perspective product teardown of the first 50 levels of Toon Blast: onboarding, progression, LiveOps, social retention and monetization.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#f3f1ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23141414'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23c7ff3d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="main.js" defer></script>
+</head>
+<body class="toon">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">İ</span>İrem Sultan Koçak</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span>Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="ext" href="https://www.linkedin.com/in/irem-sultan-kocak" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="case-hero container" aria-labelledby="case-title">
+    <div class="grid">
+      <p class="eyebrow reveal"><span>04 / Independent game product teardown · First 50 levels</span></p>
+      <h1 id="case-title" class="toon-title case-title reveal reveal-d1">50 LEVELS.<br><span class="q">ONE QUESTION.</span></h1>
+      <p class="case-sub reveal reveal-d2" style="margin-top:12px">How does a simple puzzle loop become a much larger product ecosystem?</p>
+      <p class="lead case-lede reveal reveal-d2">A player-perspective teardown of Toon Blast, tracing how onboarding, progression, timed events and social prompts enter the experience. These are observations and product hypotheses—not claims about the game's internal data or strategy.</p>
+      <div class="case-status reveal reveal-d3"><span class="status">Independent teardown</span><span class="status status--outline">No internal data</span></div>
+      <dl class="meta-strip meta-strip--3 case-meta reveal">
+        <div><dt>Method</dt><dd>First-hand playthrough</dd></div>
+        <div><dt>Scope</dt><dd>Levels 1–50</dd></div>
+        <div><dt>Lens</dt><dd>UX · Retention · LiveOps</dd></div>
+      </dl>
+    </div>
+    <div class="mt-l" aria-label="Scope of observation: levels 1 to 50">
+      <div class="toon-scope reveal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="toon-scope-axis"><span>Level 1</span><span>Scope of observation</span><span>Level 50</span></div>
+    </div>
+  </section>
+
+  <nav class="chapter-nav container" aria-label="Teardown sections">
+    <ol>
+      <li><a href="#s1"><span>01</span>Core loop</a></li>
+      <li><a href="#s2"><span>02</span>LiveOps</a></li>
+      <li><a href="#s3"><span>03</span>Event onboarding</a></li>
+      <li><a href="#s4"><span>04</span>Social retention</a></li>
+      <li><a href="#s5"><span>05</span>Community prompts</a></li>
+      <li><a href="#s6"><span>06</span>Difficulty &amp; support</a></li>
+      <li><a href="#s7"><span>07</span>Progression</a></li>
+      <li><a href="#s8"><span>08</span>Monetization</a></li>
+    </ol>
+  </nav>
+
+  <!-- 01 Core loop -->
+  <section id="s1" class="section container toon-chapter">
+    <div class="grid section-head">
+      <p class="section-no" aria-hidden="true">01</p>
+      <div class="section-body">
+        <p class="eyebrow">01 / The core loop</p>
+        <h2 class="h1" style="font-size:clamp(2.6rem,6vw,5.5rem)">Easy to enter.<br><em>More to learn.</em></h2>
+      </div>
+    </div>
+
+    <div class="loop mb-m reveal">
+      <div class="loop-ring" role="img" aria-label="Core loop: play, learn, try, progress. Surrounding systems observed in this teardown: timed events, social and community prompts, boosters and support, and rewards and lives.">
+        <div class="loop-core"><div><small>Core loop</small><b>Match &amp; clear</b></div></div>
+        <span class="loop-node n1">Play</span>
+        <span class="loop-node n2">Learn</span>
+        <span class="loop-node n3">Try</span>
+        <span class="loop-node n4">Progress</span>
+        <span class="loop-sys s1">Timed events</span>
+        <span class="loop-sys s2">Social</span>
+        <span class="loop-sys s3">Boosters</span>
+        <span class="loop-sys s4">Rewards</span>
+      </div>
+      <div class="loop-legend">
+        <p class="eyebrow mb-m">Core gameplay &amp; retention systems</p>
+        <dl>
+          <div><dt><i style="background:var(--lime)"></i>Core loop</dt><dd>Play → Learn → Try → Progress. New mechanics enter through contextual prompts.</dd></div>
+          <div><dt><i style="border-style:dashed;background:var(--bg)"></i>Surrounding systems</dt><dd>Timed events, social incentives, boosters and rewards observed around the loop across the first 50 levels.</dd></div>
+        </dl>
+        <p class="note">A summary of this teardown's observations — not the game's internal model.</p>
+      </div>
+    </div>
+
+    <div class="grid mt-xl">
+      <figure class="shot-card tc-media reveal"><div class="wf"><div class="wf-top"><b>Observation 01</b><em>Screen</em></div><div class="shot-card-img"><img src="assets/toon-blast/onboarding-balloon.webp" width="621" height="1350" alt="Contextual tutorial introducing the colored balloon mechanic" loading="lazy"></div></div><figcaption class="wf-cap"><p>A balloon mechanic explained at the moment it becomes relevant.</p></figcaption></figure>
+      <div class="tc-body reveal reveal-d1">
+        <div class="oio oio--stack">
+          <div class="o-obs"><span class="oio-label">Observation</span><p>The basic match-and-clear interaction is understandable quickly. Additional tile mechanics are introduced through contextual prompts rather than a dense explanation up front.</p></div>
+          <div class="o-int"><span class="oio-label">Interpretation</span><div><h3>Teach in context, not in a manual.</h3><p>The tutorial connects a new objective to an immediate action. This may reduce the amount of information a player must remember before acting.</p></div></div>
+          <div class="o-opp"><span class="oio-label">Opportunity</span><p>Keep new mechanic introductions short and test whether players understand the rule after the prompt disappears.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 LiveOps -->
+  <section id="s2" class="section band--dark on-dark toon-chapter">
+    <div class="container">
+      <div class="grid section-head">
+        <p class="section-no" aria-hidden="true">02</p>
+        <div class="section-body">
+          <p class="eyebrow">02 / LiveOps discovery</p>
+          <h2 class="h1" style="font-size:clamp(2.6rem,6vw,5.5rem)">The home screen is<br><span class="lime">an event hub.</span></h2>
+        </div>
+      </div>
+      <div class="grid is-flip">
+        <figure class="shot-card tc-media reveal"><div class="wf"><div class="wf-top"><b>Observation 02</b><em>Screen</em></div><div class="shot-card-img"><img src="assets/toon-blast/home-event-hub.webp" width="621" height="1350" alt="Home screen showing simultaneous events and timers around the level button" loading="lazy"></div></div><figcaption class="wf-cap"><p>Multiple event surfaces surrounding the primary level action.</p></figcaption></figure>
+        <div class="tc-body reveal reveal-d1">
+          <div class="oio oio--stack">
+            <div class="o-obs"><span class="oio-label">Observation</span><p>The home screen presents multiple time-limited activities at once. Countdown labels, progress bars, reward icons and notification badges compete for attention alongside the primary level button.</p></div>
+            <div class="o-int"><span class="oio-label">Interpretation</span><div><h3>Visibility creates urgency—and complexity.</h3><p>Timed content gives players additional reasons to return, while several simultaneous entry points can make it harder to know what matters next.</p></div></div>
+            <div class="o-opp"><span class="oio-label">Opportunity</span><p>Explore a clearer hierarchy between the next level, active event progress and secondary promotions.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Event onboarding -->
+  <section id="s3" class="section container">
+    <div class="grid section-head">
+      <p class="section-no" aria-hidden="true">03</p>
+      <div class="section-body">
+        <p class="eyebrow">03 / Event onboarding</p>
+        <h2 class="h1" style="font-size:clamp(2.6rem,6vw,5.5rem)">One event.<br><em>A second progression loop.</em></h2>
+        <p class="prose prose--lg">The Space Miner event introduces its own instructions, tool resource, board and reward path. It adds a short-term objective outside the main puzzle progression.</p>
+      </div>
+    </div>
+    <div class="event-loop reveal" role="img" aria-label="Two parallel loops: the main puzzle progression, and the Space Miner event loop with its own instructions, tool resource, board and reward path">
+      <div class="el-main">
+        <p class="eyebrow mb-m">Main puzzle progression</p>
+        <ol class="track track--main"><li><span>A</span>Next level</li><li><span>B</span>Clear the puzzle</li><li><span>C</span>Advance on the level map</li></ol>
+      </div>
+      <div class="el-event">
+        <p class="eyebrow mb-m">Space Miner · event loop</p>
+        <ol class="track track--event"><li><span>01</span>Learn the event-specific action</li><li><span>02</span>Tool resource</li><li><span>03</span>Event board</li><li><span>04</span>Reward path — and the next resource constraint</li></ol>
+      </div>
+    </div>
+    <div class="grid mt-xl">
+      <div class="reading">
+        <p class="eyebrow" style="color:var(--olive)">Product hypothesis</p>
+        <p class="pullquote mt-s" style="max-width:none;font-size:clamp(1.4rem,2.4vw,2rem)">A separate event loop may extend session goals beyond clearing the next puzzle. Its value should be evaluated against comprehension and cognitive load.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Social -->
+  <section id="s4" class="section band toon-chapter">
+    <div class="container">
+      <div class="grid section-head">
+        <p class="section-no" aria-hidden="true">04</p>
+        <div class="section-body">
+          <p class="eyebrow">04 / Social &amp; competitive retention</p>
+          <h2 class="h1" style="font-size:clamp(2.6rem,6vw,5.5rem)">Progress can become<br><em>a shared outcome.</em></h2>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="l5 reveal">
+          <div class="phone-duo">
+            <figure class="shot-card  reveal"><div class="wf"><div class="wf-top"><b>Dragon Treasure</b><em>Screen</em></div><div class="shot-card-img"><img src="assets/toon-blast/dragon-treasure-rule.webp" width="621" height="1350" alt="Dragon Treasure event prompt: pass the levels without failing to complete the mission" loading="lazy"></div></div><figcaption class="wf-cap"><p>Seven levels, no failure</p></figcaption></figure>
+            <figure class="shot-card  reveal"><div class="wf"><div class="wf-top"><b>Dragon Treasure</b><em>Screen</em></div><div class="shot-card-img"><img src="assets/toon-blast/dragon-treasure-shared-reward.webp" width="621" height="1350" alt="Dragon Treasure event prompt: the grand prize will be shared equally among winners" loading="lazy"></div></div><figcaption class="wf-cap"><p>A prize shared among winners</p></figcaption></figure>
+          </div>
+          <p class="caption mt-s"><span class="caption-label">Observation 04</span>Dragon Treasure combines a win streak objective with a shared reward.</p>
+        </div>
+        <div class="r6 reveal reveal-d1">
+          <div class="oio oio--stack">
+            <div class="o-obs"><span class="oio-label">Observation</span><p>Dragon Treasure presents a seven-level, no-failure challenge and a prize shared among winners.</p></div>
+            <div class="o-int"><span class="oio-label">Interpretation</span><div><h3>A reward is no longer only personal.</h3><p>The framing introduces competition and a collective outcome without changing the core puzzle interaction.</p></div></div>
+            <div class="o-opp"><span class="oio-label">Opportunity</span><p>Make participation rules and reward distribution easy to understand before a player commits.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Community -->
+  <section id="s5" class="section container toon-chapter">
+    <div class="grid section-head">
+      <p class="section-no" aria-hidden="true">05</p>
+      <div class="section-body">
+        <p class="eyebrow">05 / Return &amp; community prompts</p>
+        <h2 class="h1" style="font-size:clamp(2.6rem,6vw,5.5rem)">Beyond the level map.</h2>
+      </div>
+    </div>
+    <div class="grid is-flip">
+      <figure class="shot-card tc-media reveal"><div class="wf"><div class="wf-top"><b>Observation 05</b><em>Screen</em></div><div class="shot-card-img"><img src="assets/toon-blast/community-invitation.webp" width="621" height="1350" alt="Facebook community invitation popup offering free timed lives, special competitions, content and gifts" loading="lazy"></div></div><figcaption class="wf-cap"><p>An external community invitation offering in-game benefits.</p></figcaption></figure>
+      <div class="tc-body reveal reveal-d1">
+        <div class="oio oio--stack">
+          <div class="o-obs"><span class="oio-label">Observation</span><p>The observed experience also includes prompts for an external Facebook community. This is a visible bridge from in-game activity to an out-of-game social space; its actual conversion or retention impact cannot be inferred from screenshots.</p></div>
+          <div class="o-int"><span class="oio-label">Interpretation</span><div><h3>Give each prompt a clear purpose.</h3><p>The community invitation highlights free timed lives, competitions, content and gifts. Players may understand the benefits, but the interruption should be weighed against where it appears in the play journey.</p></div></div>
+          <div class="o-opp"><span class="oio-label">Opportunity</span><p>Compare prompt timing and dismissal behavior rather than assuming a prominent offer is always more effective.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 Difficulty -->
+  <section id="s6" class="section band--dark on-dark toon-chapter">
+    <div class="container">
+      <div class="grid section-head">
+        <p class="section-no" aria-hidden="true">06</p>
+        <div class="section-body">
+          <p class="eyebrow">06 / Difficulty &amp; support systems</p>
+          <h2 class="h1" style="font-size:clamp(2.4rem,5.4vw,5rem)">When a level gets harder,<br><span class="lime">what helps the player continue?</span></h2>
+        </div>
+      </div>
+      <div class="grid">
+        <figure class="shot-card tc-media reveal"><div class="wf"><div class="wf-top"><b>Observation 06</b><em>Screen</em></div><div class="shot-card-img"><img src="assets/toon-blast/level-boosters.webp" width="621" height="1350" alt="A Toon Blast level in progress with a row of booster options below the board" loading="lazy"></div></div><figcaption class="wf-cap"><p>A level in progress, with booster options shown below the board.</p></figcaption></figure>
+        <div class="tc-body reveal reveal-d1">
+          <div class="oio oio--stack">
+            <div class="o-obs"><span class="oio-label">Observation</span><p>Boosters and support tools add options beyond the basic match-and-clear action. Their presence creates a product question: does the game teach players when and why to use a tool, or merely show that the tool exists?</p></div>
+            <div class="o-int"><span class="oio-label">Interpretation</span><div><h3>Support should build confidence, not confusion.</h3><p>As mechanics accumulate, players must learn both puzzle rules and the role of available boosters. The perceived difficulty of a level can therefore depend on how well those options are understood.</p></div></div>
+            <div class="o-opp"><span class="oio-label">Opportunity</span><p>Test whether first-time booster prompts improve comprehension, and compare level retries with and without contextual support. These are proposed experiments, not measured results.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 Progression -->
+  <section id="s7" class="section container">
+    <div class="grid section-head">
+      <p class="section-no" aria-hidden="true">07</p>
+      <div class="section-body">
+        <p class="eyebrow">07 / Progression &amp; feedback</p>
+        <h2 class="h1" style="font-size:clamp(2.6rem,6vw,5.5rem)">Progress needs<br><em>an understandable meaning.</em></h2>
+      </div>
+    </div>
+    <div class="grid" style="row-gap:40px">
+      <div class="l5 reveal">
+        <div class="dgm" role="img" aria-label="Several parallel progress systems: level journey, stars and event progress, each needing a clear meaning">
+          <span class="dgm-title">Parallel progress systems</span>
+          <div class="par-bars">
+            <div><span>Level journey</span><i style="--w:82%"></i></div>
+            <div><span>Stars</span><i style="--w:46%"></i><b>?</b></div>
+            <div><span>Event meter</span><i style="--w:34%"></i><b>?</b></div>
+          </div>
+          <p class="caption mt-s">Illustrative — shows the question, not observed values.</p>
+        </div>
+      </div>
+      <div class="r6 reveal reveal-d1">
+        <div class="oio oio--stack">
+          <div class="o-obs"><span class="oio-label">Observation</span><p>The level journey combines completed stages, visible stars and several parallel progress systems. Progress indicators can motivate continued play, but their value depends on whether players understand what each one represents.</p></div>
+          <div class="o-int"><span class="oio-label">Interpretation</span><div><h3>Make the relationship between action and reward legible.</h3><p>When the role of stars or an event meter is not immediately clear, the interface can create a question instead of a goal.</p></div></div>
+          <div class="o-opp"><span class="oio-label">Opportunity</span><p>Review how stars are introduced, whether rewards are explained at the point of earning, and how event progress is communicated after each level.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 Monetization -->
+  <section id="s8" class="section band">
+    <div class="container">
+      <div class="grid section-head">
+        <p class="section-no" aria-hidden="true">08</p>
+        <div class="section-body">
+          <p class="eyebrow">08 / Monetization &amp; returning players</p>
+          <h2 class="h1" style="font-size:clamp(2.6rem,6vw,5.5rem)">More reasons to return.<br><em>More decisions to make.</em></h2>
+          <p class="prose prose--lg">Timed lives, rewards, boosters and multiple events suggest different ways the experience can shape session length and return behavior. They also sit near monetization-related decisions, where the distinction between earned progress, free support and paid value matters.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="inset reveal">
+          <p class="eyebrow mb-m">Product questions, not internal claims</p>
+          <h3 class="h2 mb-m">Protect the clarity of the core journey.</h3>
+          <ol class="questions">
+            <li><b>Monetization</b><p>Is the value of a booster or purchase understandable before a player needs it? Are free and paid paths easy to distinguish?</p></li>
+            <li><b>Returning players</b><p>After time away, can someone identify the next useful action without processing every event badge and timer?</p></li>
+            <li class="is-opp"><b>Opportunity</b><p>Evaluate return-session comprehension, offer timing and perceived fairness through usability testing and behavioral data if available.</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Takeaway -->
+  <section class="reflection band--dark on-dark" aria-labelledby="learn-title">
+    <div class="container">
+      <div class="grid">
+        <p class="eyebrow">The product takeaway</p>
+        <div class="reflection-body reveal">
+          <h2 id="learn-title" style="max-width:22ch">The puzzle is the entry point. <em>The surrounding systems shape the journey.</em></h2>
+          <p class="prose prose--lg">Across the first 50 levels, the most interesting shift was not the basic puzzle interaction. It was the gradual addition of new mechanics, boosters, rewards, timers, events and social incentives. My main product question: how do you keep these systems discoverable without obscuring the simple loop that brought players in?</p>
+          <p class="disclaimer">Independent observational analysis based on personal gameplay. No access to internal analytics, experiments, or product decisions. Screenshots are used for commentary and critique; Toon Blast and its artwork belong to their respective owners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <a class="next-project" href="hera-v2.html">
+      <p class="eyebrow">Back to the start · 01</p>
+      <span class="np-title">HERA V2 <span class="np-arrow" aria-hidden="true">→</span></span>
+      <span class="np-sub">Defining the next chapter of a university management product: new workflows, roles, and self-service capabilities for a web-based version.</span>
+    </a>
+    <p style="padding-bottom:48px"><a class="link" href="index.html#work">← Back to selected work</a></p>
+  </div>
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="container">
+    <p class="footer-cta">Have something interesting to build? <em>Let’s talk.</em></p>
+    <div class="footer-links">
+      <a class="btn" href="https://www.linkedin.com/in/irem-sultan-kocak" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <div class="footer-meta"><small>© 2026 İrem Sultan Koçak</small><a href="index.html#work">← Back to work</a></div>
+  </div>
+</footer>
+</body>
+</html>
