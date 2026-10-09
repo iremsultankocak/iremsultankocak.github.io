@@ -1282,3 +1282,8 @@ strong, b { font-weight: 600; }
   .toon-chapter .phone-duo, .toon-chapter .l5 > .caption { margin-inline: 0; }
 }
 .phone-duo .shot-card .wf-top em { display: none; }
+.footer-mail { margin-top: 18px; font-size: clamp(1.1rem, 2vw, 1.5rem); font-weight: 500; letter-spacing: -.01em; }
+.footer-mail a { text-decoration: underline; text-decoration-color: var(--lime); text-underline-offset: .22em; text-decoration-thickness: 2px; }
+.footer-mail a:hover { color: var(--lime); }
+.contact-card dd a { overflow-wrap: anywhere; }
+.notfound { min-height: 56vh; display: grid; align-content: center; }
