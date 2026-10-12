@@ -228,7 +228,7 @@ strong, b { font-weight: 600; }
 .nav-list a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--lime); transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease); }
 .nav-list a:hover::after, .nav-list a[aria-current="page"]::after { transform: scaleX(1); }
 .nav-list a[aria-current="page"] { font-weight: 600; }
-.ext::after { content: " ↗"; }
+.ext::after { content: ""; display: inline-block; width: .62em; height: .62em; margin-left: .32em; background: currentColor; -webkit-mask: var(--i-ne) center / contain no-repeat; mask: var(--i-ne) center / contain no-repeat; }
 .nav-toggle { display: none; }
 
 @media (max-width: 760px) {
@@ -1299,3 +1299,13 @@ strong, b { font-weight: 600; }
   .nav-list .lang-switch { border-left: 0; padding: 14px 0 0; gap: 10px; font-size: 1rem; }
   .nav-list .lang-switch a { display: inline; font-size: 1rem; padding: 4px 0; }
 }
+
+/* Arrow icons drawn in CSS: Unicode ↗ / ↔ render as colour emoji on iOS and some Android fonts */
+:root {
+  --i-ne: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12 12 4M5.5 4H12v6.5'/%3E%3C/svg%3E");
+  --i-lr: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 8h12M5 5 2 8l3 3M11 5l3 3-3 3'/%3E%3C/svg%3E");
+}
+.i-ne, .i-lr { display: inline-block; width: .8em; height: .8em; vertical-align: -.06em; background: currentColor; -webkit-mask: var(--i-ne) center / contain no-repeat; mask: var(--i-ne) center / contain no-repeat; }
+.i-lr { width: 1em; height: 1em; vertical-align: -.12em; -webkit-mask-image: var(--i-lr); mask-image: var(--i-lr); }
+.caption-label .i-ne { margin-right: .3em; }
+.ads-logic-center b .i-lr, .sides .i-lr { width: 1.1em; height: 1.1em; }
