@@ -1287,3 +1287,15 @@ strong, b { font-weight: 600; }
 .footer-mail a:hover { color: var(--lime); }
 .contact-card dd a { overflow-wrap: anywhere; }
 .notfound { min-height: 56vh; display: grid; align-content: center; }
+
+/* Language switch */
+.nav-list .lang-switch { display: inline-flex; align-items: center; gap: 4px; padding-left: clamp(10px, 1.6vw, 22px); border-left: 1px solid var(--line); font-size: var(--fs-small); }
+.nav-list .lang-switch a { padding: 6px 2px; color: var(--muted); font-weight: 500; }
+.nav-list .lang-switch a::after { display: none; }
+.nav-list .lang-switch a[aria-current="true"] { color: var(--ink); font-weight: 700; }
+.nav-list .lang-switch a:hover { color: var(--ink); }
+.nav-list .lang-switch span { color: var(--line); }
+@media (max-width: 760px) {
+  .nav-list .lang-switch { border-left: 0; padding: 14px 0 0; gap: 10px; font-size: 1rem; }
+  .nav-list .lang-switch a { display: inline; font-size: 1rem; padding: 4px 0; }
+}
